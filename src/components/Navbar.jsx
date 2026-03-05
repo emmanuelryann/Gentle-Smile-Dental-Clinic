@@ -3,9 +3,10 @@ import '../styles/Navbar.css';
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
-  { label: 'Services', href: '#services' },
   { label: 'About', href: '#about' },
-  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'Services', href: '#services' },
+  { label: 'Appointments', href: '#appointments' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 export default function Navbar() {
@@ -67,14 +68,6 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <a
-            href="#contact"
-            className="navbar__cta"
-            onClick={(e) => handleNavClick(e, '#cta')}
-          >
-            Book Appointment
-          </a>
-
           {/* Hamburger */}
           <button
             className={`navbar__hamburger${sidebarOpen ? ' open' : ''}`}
@@ -109,13 +102,6 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <a
-          href="#contact"
-          className="sidebar__cta"
-          onClick={(e) => handleNavClick(e, '#cta')}
-        >
-          Book Appointment
-        </a>
       </aside>
     </>
   );

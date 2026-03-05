@@ -34,7 +34,7 @@
   font-size: clamp(1.8rem, 1.3rem + 2vw, 3.2rem);
   font-weight: 700;
   color: var(--clr-white);
-  max-width: min(100%, 36rem);
+  max-width: none;
   margin-inline: auto;
   line-height: 1.12;
   margin-bottom: clamp(0.75rem, 0.5rem + 0.5vw, 1.25rem);
@@ -44,7 +44,7 @@
   font-size: clamp(0.8rem, 0.73rem + 0.2vw, 0.93rem);
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.7;
-  max-width: min(100%, 32rem);
+  max-width: none;
   margin-inline: auto;
   margin-bottom: clamp(1.5rem, 1rem + 1vw, 2.5rem);
 }

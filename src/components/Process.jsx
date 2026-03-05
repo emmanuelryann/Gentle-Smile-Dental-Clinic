@@ -42,7 +42,7 @@ export default function Process() {
       <div className="container">
         <div className="process__inner">
           <div className="process__content">
-            <span className="section-label">How It Works</span>
+            <span className="section-label">How it Works</span>
             <h2 className="section-heading">
               A Simple Process for Exceptional Dental Care at Caninus
             </h2>

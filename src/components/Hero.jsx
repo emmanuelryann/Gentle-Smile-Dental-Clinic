@@ -38,7 +38,7 @@ export default function Hero() {
               ))}
             </div>
             <span className="hero__badge-text">
-              With more than 10 experienced dentists, we ensure exceptional care
+              With more than 10 experienced dentists, we ensure<br />exceptional care
               for your smile
             </span>
           </div>
@@ -55,8 +55,7 @@ export default function Hero() {
           </p>
 
           <a href="#cta" className="hero__cta-btn">
-            Book Appointment<span className="hero__cta-separator">|</span>
-            Explore Services
+            Book Appointment
           </a>
         </div>
       </div>

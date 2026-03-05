@@ -35,8 +35,8 @@ export default function Testimonials() {
         <div className="testimonials__header">
           <span className="section-label">What Our Patients Say</span>
           <h2 className="section-heading">
-            Hear What Our Happy Patients Have to Say About Their Experience
-            with Us
+            Hear What Our Happy Patients Have to Say<br />
+            About Their Experience with Us
           </h2>
           <p className="testimonials__subtitle">
             Trusted by many, loved by all—discover what makes us special

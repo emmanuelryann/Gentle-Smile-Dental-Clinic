@@ -1,7 +1,7 @@
 /* ===== PROCESS ===== */
 .process {
   padding: clamp(4rem, 3rem + 3vw, 7rem) 0;
-  background-color: var(--clr-white);
+  background-color: #fcf8f4;
 }
 
 .process__inner {
@@ -15,11 +15,11 @@
 }
 
 .process__content .section-label {
-  color: #27ae60;
+  color: var(--clr-primary);
 }
 
 .process__content .section-heading {
-  max-width: min(100%, 26rem);
+  max-width: none;
 }
 
 .process__description {

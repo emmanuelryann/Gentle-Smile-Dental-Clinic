@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-label {
   font-family: var(--ff-body);
   font-size: clamp(0.7rem, 0.6rem + 0.3vw, 0.85rem);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--clr-primary);
   text-transform: capitalize;
   letter-spacing: 0.05em;
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Section heading */
 .section-heading {
-  font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.6rem);
+  font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2.2rem);
   font-weight: 700;
   color: var(--clr-dark);
   line-height: 1.2;
