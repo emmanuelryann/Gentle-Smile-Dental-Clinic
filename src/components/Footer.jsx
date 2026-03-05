@@ -1,4 +1,5 @@
 import '../styles/Footer.css';
+import gentleSmileLogo from '../assets/gentle smile logo.png';
 
 const QUICK_LINKS = ['Home', 'Clinics', 'Pricing', 'About', 'Locations'];
 const LEGAL = ['Privacy Policy', 'Terms of Service', 'Disclaimer'];
@@ -41,11 +42,13 @@ function SocialIcon({ type }) {
 
 export default function Footer() {
   return (
-    <footer className="footer" id="footer">
+    <footer className="footer fade-in-section" id="footer">
       <div className="container">
         <div className="footer__top">
           <div className="footer__brand">
-            <div className="footer__logo">Caninus</div>
+            <div className="footer__logo">
+              <img src={gentleSmileLogo} alt="Gentle Smile Dental" className="footer__logo-img" />
+            </div>
           </div>
 
           <div className="footer__column">

@@ -65,7 +65,7 @@
 }
 
 .faq__item.active .faq__question-text {
-  color: var(--clr-primary-light);
+  color: var(--clr-accent);
 }
 
 .faq__icon {
@@ -81,7 +81,7 @@
 }
 
 .faq__item.active .faq__icon {
-  background-color: var(--clr-primary-light);
+  background-color: var(--clr-accent);
   transform: rotate(90deg);
 }
 
@@ -132,13 +132,13 @@
   font-size: clamp(0.82rem, 0.75rem + 0.25vw, 0.95rem);
   font-weight: 600;
   color: var(--clr-white);
-  background-color: var(--clr-primary-light);
+  background-color: var(--clr-accent);
   padding: clamp(0.6rem, 0.45rem + 0.4vw, 0.8rem) clamp(1.5rem, 1.25rem + 1vw, 2rem);
   border-radius: 2rem;
   transition: background-color var(--transition-base), transform var(--transition-fast);
 }
 
 .faq__btn:hover {
-  background-color: var(--clr-primary);
+  background-color: #087d3a;
   transform: translateY(-0.0625rem);
 }

@@ -36,7 +36,7 @@
 .appointments__icon-sparkle svg {
   width: clamp(1.2rem, 1rem + 0.4vw, 1.5rem);
   height: clamp(1.2rem, 1rem + 0.4vw, 1.5rem);
-  fill: var(--clr-primary-light);
+  fill: var(--clr-accent);
 }
 
 .appointments__heading {
@@ -85,7 +85,7 @@
   width: clamp(1rem, 0.85rem + 0.2vw, 1.25rem);
   height: clamp(1rem, 0.85rem + 0.2vw, 1.25rem);
   fill: none;
-  stroke: var(--clr-primary-light);
+  stroke: var(--clr-accent);
   stroke-width: 2;
 }
 
@@ -131,14 +131,14 @@
 }
 
 .appointments__btn--primary {
-  background-color: var(--clr-primary-light);
+  background-color: var(--clr-accent);
   color: var(--clr-white);
-  border: 0.0625rem solid var(--clr-primary-light);
+  border: 0.0625rem solid var(--clr-accent);
 }
 
 .appointments__btn--primary:hover {
-  background-color: var(--clr-primary);
-  border-color: var(--clr-primary);
+  background-color: #087d3a;
+  border-color: #087d3a;
   transform: translateY(-0.0625rem);
 }
 
@@ -166,13 +166,13 @@
 }
 
 .appointments__hotline {
-  color: var(--clr-primary-light);
+  color: var(--clr-accent);
   font-weight: 600;
   transition: color var(--transition-base);
 }
 
 .appointments__hotline:hover {
-  color: var(--clr-primary);
+  color: #087d3a;
 }
 
 .appointments__image {

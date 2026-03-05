@@ -20,7 +20,7 @@ const FEATURES = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="why-choose" id="about">
+    <section className="why-choose fade-in-section" id="about">
       <div className="container">
         <div className="why-choose__inner">
           {/* Left panel with image overlay */}

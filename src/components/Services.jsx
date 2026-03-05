@@ -29,7 +29,7 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section className="services" id="services">
+    <section className="services fade-in-section" id="services">
       <div className="container">
         <div className="services__header">
           <div className="services__header-top">

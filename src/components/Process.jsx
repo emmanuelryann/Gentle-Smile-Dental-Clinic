@@ -38,7 +38,7 @@ const STEPS = [
 
 export default function Process() {
   return (
-    <section className="process" id="process">
+    <section className="process fade-in-section" id="process">
       <div className="container">
         <div className="process__inner">
           <div className="process__content">

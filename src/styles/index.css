@@ -9,10 +9,10 @@
 
 :root {
   /* Colors */
-  --clr-primary: #1a5276;
-  --clr-primary-dark: #154360;
-  --clr-primary-light: #2980b9;
-  --clr-accent: #d4a843;
+  --clr-primary: #262378;
+  --clr-primary-dark: #1c1a58;
+  --clr-primary-light: #4440b8;
+  --clr-accent: #0A9745;
   --clr-white: #ffffff;
   --clr-off-white: #f8f9fa;
   --clr-light-gray: #f0f2f5;
@@ -116,4 +116,28 @@ h1, h2, h3, h4, h5, h6 {
   width: min(100%, 75rem);
   margin-inline: auto;
   padding-inline: clamp(1rem, 0.5rem + 2vw, 3rem);
+}
+
+/* ===== SCROLL REVEAL ANIMATION ===== */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(3rem);
+  visibility: hidden;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out, visibility 0.8s;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    transition: none;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
 }

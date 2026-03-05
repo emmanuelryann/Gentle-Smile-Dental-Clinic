@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import '../styles/Navbar.css';
+import gentleSmileLogo from '../assets/gentle smile logo.png';
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -50,7 +51,7 @@ export default function Navbar() {
             className="navbar__logo"
             onClick={(e) => handleNavClick(e, '#home')}
           >
-            Caninus
+            <img src={gentleSmileLogo} alt="Gentle Smile Dental" className="navbar__logo-img" />
           </a>
 
           {/* Desktop links */}

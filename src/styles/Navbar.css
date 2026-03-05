@@ -21,16 +21,20 @@
 }
 
 .navbar__logo {
-  font-family: var(--ff-heading);
-  font-size: clamp(1.2rem, 1rem + 0.8vw, 1.7rem);
-  font-weight: 700;
-  color: var(--clr-white);
-  transition: color var(--transition-base);
+  display: flex;
+  align-items: center;
+  transition: opacity var(--transition-base);
   cursor: pointer;
 }
 
-.navbar.scrolled .navbar__logo {
-  color: var(--clr-primary);
+.navbar__logo:hover {
+  opacity: 0.8;
+}
+
+.navbar__logo-img {
+  height: clamp(2.5rem, 2.2rem + 1vw, 3.5rem);
+  width: auto;
+  object-fit: contain;
 }
 
 .navbar__links {
@@ -54,11 +58,11 @@
 }
 
 .navbar__link:hover {
-  color: var(--clr-primary-light);
+  color: var(--clr-accent);
 }
 
 .navbar__link.active {
-  color: var(--clr-primary-light);
+  color: var(--clr-accent);
 }
 
 /* Hamburger */

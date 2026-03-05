@@ -32,7 +32,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="faq" id="faq">
+    <section className="faq fade-in-section" id="faq">
       <div className="container">
         <div className="faq__header">
           <h2 className="section-heading">Frequently Asked Questions</h2>

@@ -30,7 +30,7 @@ function StarIcon() {
 
 export default function Testimonials() {
   return (
-    <section className="testimonials" id="testimonials">
+    <section className="testimonials fade-in-section" id="testimonials">
       <div className="container">
         <div className="testimonials__header">
           <span className="section-label">What Our Patients Say</span>

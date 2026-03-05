@@ -2,7 +2,7 @@ import '../styles/CTA.css';
 
 export default function CTA() {
   return (
-    <section className="cta-section" id="cta">
+    <section className="cta-section fade-in-section" id="cta">
       <div className="cta-section__bg">
         <img
           src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1920&q=80"

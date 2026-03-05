@@ -2,7 +2,7 @@ import '../styles/Appointments.css';
 
 export default function Appointments() {
   return (
-    <section className="appointments" id="appointments">
+    <section className="appointments fade-in-section" id="appointments">
       <div className="container appointments__inner">
         <div className="appointments__card">
           <div className="appointments__card-content">
