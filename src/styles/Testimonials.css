@@ -1,0 +1,100 @@
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+  padding: clamp(4rem, 3rem + 3vw, 7rem) 0;
+  background-color: var(--clr-light-gray);
+}
+
+.testimonials__header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 1.5rem + 1.5vw, 3.5rem);
+}
+
+.testimonials__header .section-heading {
+  max-width: min(100%, 30rem);
+  margin-inline: auto;
+}
+
+.testimonials__subtitle {
+  font-size: clamp(0.78rem, 0.7rem + 0.2vw, 0.9rem);
+  color: var(--clr-gray);
+  margin-top: clamp(0.25rem, 0.15rem + 0.2vw, 0.5rem);
+}
+
+.testimonials__grid {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.testimonials__card {
+  flex: 1 1 17rem;
+  background-color: var(--clr-white);
+  border-radius: 0.75rem;
+  padding: clamp(1.25rem, 1rem + 0.7vw, 1.75rem);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.testimonials__card:hover {
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.07);
+}
+
+.testimonials__stars {
+  display: flex;
+  gap: 0.1875rem;
+  margin-bottom: clamp(0.75rem, 0.5rem + 0.4vw, 1rem);
+}
+
+.testimonials__star {
+  font-size: clamp(0.85rem, 0.75rem + 0.3vw, 1.05rem);
+  color: var(--clr-star);
+}
+
+.testimonials__text {
+  font-size: clamp(0.8rem, 0.72rem + 0.2vw, 0.92rem);
+  color: var(--clr-text-light);
+  line-height: 1.7;
+  margin-bottom: clamp(1rem, 0.75rem + 0.5vw, 1.5rem);
+}
+
+.testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.testimonials__author-img {
+  width: clamp(2.25rem, 2rem + 0.5vw, 2.75rem);
+  height: clamp(2.25rem, 2rem + 0.5vw, 2.75rem);
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.testimonials__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__author-name {
+  font-size: clamp(0.82rem, 0.74rem + 0.2vw, 0.95rem);
+  font-weight: 600;
+  color: var(--clr-dark);
+}
+
+.testimonials__author-role {
+  font-size: clamp(0.68rem, 0.62rem + 0.15vw, 0.8rem);
+  color: var(--clr-gray);
+}
+
+@media (max-width: 52rem) {
+  .testimonials__card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .testimonials__card {
+    flex: 1 1 100%;
+  }
+}

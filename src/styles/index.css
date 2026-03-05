@@ -1,0 +1,119 @@
+/* ===== CSS RESET & GLOBAL STYLES ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --clr-primary: #1a5276;
+  --clr-primary-dark: #154360;
+  --clr-primary-light: #2980b9;
+  --clr-accent: #d4a843;
+  --clr-white: #ffffff;
+  --clr-off-white: #f8f9fa;
+  --clr-light-gray: #f0f2f5;
+  --clr-gray: #6c757d;
+  --clr-dark-gray: #495057;
+  --clr-dark: #212529;
+  --clr-text: #333333;
+  --clr-text-light: #555555;
+  --clr-star: #f5b731;
+  --clr-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Typography */
+  --ff-heading: 'Playfair Display', Georgia, serif;
+  --ff-body: 'Inter', system-ui, sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--ff-body);
+  color: var(--clr-text);
+  line-height: 1.6;
+  background-color: var(--clr-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--ff-body);
+  background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-heading);
+  line-height: 1.2;
+}
+
+/* Section label badge */
+.section-label {
+  font-family: var(--ff-body);
+  font-size: clamp(0.7rem, 0.6rem + 0.3vw, 0.85rem);
+  font-weight: 600;
+  color: var(--clr-primary);
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+  margin-bottom: clamp(0.5rem, 0.4rem + 0.3vw, 0.75rem);
+  display: inline-block;
+}
+
+/* Section heading */
+.section-heading {
+  font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.6rem);
+  font-weight: 700;
+  color: var(--clr-dark);
+  line-height: 1.2;
+  margin-bottom: clamp(0.75rem, 0.5rem + 0.5vw, 1.25rem);
+}
+
+/* Section description */
+.section-description {
+  font-size: clamp(0.85rem, 0.78rem + 0.3vw, 1rem);
+  color: var(--clr-text-light);
+  line-height: 1.7;
+  max-width: min(100%, 38rem);
+}
+
+/* Container utility */
+.container {
+  width: min(100%, 75rem);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 0.5rem + 2vw, 3rem);
+}

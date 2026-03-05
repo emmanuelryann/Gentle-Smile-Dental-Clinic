@@ -1,0 +1,133 @@
+/* ===== FOOTER ===== */
+.footer {
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-white);
+  padding: clamp(3rem, 2rem + 2.5vw, 5rem) 0 0;
+}
+
+.footer__top {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: clamp(2rem, 1.5rem + 1.5vw, 3.5rem);
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
+}
+
+.footer__brand {
+  flex: 1 1 15rem;
+}
+
+.footer__logo {
+  font-family: var(--ff-heading);
+  font-size: clamp(1.2rem, 1rem + 0.6vw, 1.6rem);
+  font-weight: 700;
+  margin-bottom: clamp(0.5rem, 0.35rem + 0.3vw, 0.85rem);
+}
+
+.footer__brand-text {
+  font-size: clamp(0.75rem, 0.68rem + 0.2vw, 0.87rem);
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+  max-width: min(100%, 18rem);
+}
+
+.footer__column {
+  flex: 1 1 8rem;
+}
+
+.footer__column-title {
+  font-family: var(--ff-body);
+  font-size: clamp(0.82rem, 0.75rem + 0.2vw, 0.95rem);
+  font-weight: 600;
+  margin-bottom: clamp(0.75rem, 0.5rem + 0.4vw, 1.15rem);
+  color: var(--clr-white);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.footer__link {
+  font-size: clamp(0.73rem, 0.67rem + 0.18vw, 0.85rem);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-base);
+  padding: clamp(0.15rem, 0.1rem + 0.1vw, 0.25rem) 0;
+}
+
+.footer__link:hover {
+  color: var(--clr-white);
+}
+
+/* Social column */
+.footer__social-column {
+  flex: 0 1 auto;
+}
+
+.footer__social-label {
+  font-family: var(--ff-body);
+  font-size: clamp(0.82rem, 0.75rem + 0.2vw, 0.95rem);
+  font-weight: 600;
+  margin-bottom: clamp(0.75rem, 0.5rem + 0.4vw, 1.15rem);
+  color: var(--clr-white);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer__social-link {
+  width: clamp(2rem, 1.75rem + 0.5vw, 2.5rem);
+  height: clamp(2rem, 1.75rem + 0.5vw, 2.5rem);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-base);
+}
+
+.footer__social-link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.footer__social-link svg {
+  width: clamp(0.85rem, 0.75rem + 0.2vw, 1rem);
+  height: clamp(0.85rem, 0.75rem + 0.2vw, 1rem);
+  fill: var(--clr-white);
+}
+
+/* Bottom bar */
+.footer__bottom {
+  text-align: center;
+  padding: clamp(1rem, 0.75rem + 0.5vw, 1.5rem) 0;
+  margin-top: clamp(1rem, 0.75rem + 0.5vw, 1.5rem);
+}
+
+.footer__copyright {
+  font-size: clamp(0.68rem, 0.62rem + 0.15vw, 0.8rem);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 52rem) {
+  .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__brand {
+    flex: 1 1 100%;
+    margin-bottom: clamp(0.5rem, 0.3rem + 0.4vw, 1rem);
+  }
+
+  .footer__column {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .footer__column {
+    flex: 1 1 100%;
+  }
+}
