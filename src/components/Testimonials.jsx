@@ -2,25 +2,22 @@ import '../styles/Testimonials.css';
 
 const TESTIMONIALS = [
   {
-    text: 'Caninus is great. I was scared about dentists, but the team made me feel comfortable. The results were amazing and I finally have the smile I always wanted!',
-    name: 'Sarah M.',
-    role: 'Regular Patient',
+    text: '"Caninus made my dental journey stress-free and enjoyable. From the friendly staff to the advanced treatments, everything was perfect!"',
+    name: 'Siti Aisyah',
     avatar:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80',
     stars: 5,
   },
   {
-    text: 'The expertise shown by the dentists at Caninus is unmatched. They explained everything clearly, used advanced tools, and my treatment was painless.',
-    name: 'Ahmed Wahab',
-    role: 'Implant Patient',
+    text: '"I\'m so grateful for the amazing care I received at Caninus. The team is incredibly professional and kind. My smile has never looked better!"',
+    name: 'Ahmad Firdaus',
     avatar:
       'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80',
     stars: 5,
   },
   {
-    text: 'Professional, friendly, and thorough. The whitening treatment exceeded my expectations. I recommend Caninus to everyone looking for quality dental care.',
-    name: 'Lisa Chen',
-    role: 'Whitening Patient',
+    text: '"I was nervous about my dental procedure, but the team at Caninus made me feel completely at ease with their support. The results are incredible!"',
+    name: 'Faisal Rahman',
     avatar:
       'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80',
     stars: 5,
@@ -42,7 +39,7 @@ export default function Testimonials() {
             with Us
           </h2>
           <p className="testimonials__subtitle">
-            Trusted by 1000+ satisfied patients for their dental care needs
+            Trusted by many, loved by all—discover what makes us special
           </p>
         </div>
 
@@ -55,18 +52,13 @@ export default function Testimonials() {
                 ))}
               </div>
               <p className="testimonials__text">{t.text}</p>
-              <div className="testimonials__author">
-                <img
-                  src={t.avatar}
-                  alt={t.name}
-                  className="testimonials__author-img"
-                  loading="lazy"
-                />
-                <div className="testimonials__author-info">
-                  <span className="testimonials__author-name">{t.name}</span>
-                  <span className="testimonials__author-role">{t.role}</span>
-                </div>
-              </div>
+              <span className="testimonials__author-name">{t.name}</span>
+              <img
+                src={t.avatar}
+                alt={t.name}
+                className="testimonials__author-img"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>

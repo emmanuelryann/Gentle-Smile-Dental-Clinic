@@ -2,19 +2,37 @@ import '../styles/Process.css';
 
 const STEPS = [
   {
-    number: '1',
     title: 'Schedule an Appointment',
-    text: 'Book your visit online or by phone. Choose a time that works best for you, and our friendly staff will confirm your appointment.',
+    text: 'Contact us via phone or online to book a convenient time for your visit. Our team is ready to assist with any scheduling needs.',
+    icon: (
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+        <line x1="16" y1="2" x2="16" y2="6" />
+        <line x1="8" y1="2" x2="8" y2="6" />
+        <line x1="3" y1="10" x2="21" y2="10" />
+      </svg>
+    ),
   },
   {
-    number: '2',
-    title: 'Get a Comprehensive Exam',
-    text: 'Our dentists will perform a thorough examination, discuss your dental health goals, and create a personalized treatment plan.',
+    title: 'Consultation with Our Experts',
+    text: 'Meet our experienced dentists, who will carefully evaluate your oral health, discuss your concerns, and create a personalized treatment plan.',
+    icon: (
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+    ),
   },
   {
-    number: '3',
     title: 'Begin Your Treatment',
-    text: 'Receive expert dental care tailored to your needs in a comfortable and safe environment to achieve your perfect smile.',
+    text: 'Start your journey to a healthier, brighter smile with our advanced dental treatments designed for your comfort and satisfaction.',
+    icon: (
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+      </svg>
+    ),
   },
 ];
 
@@ -24,22 +42,19 @@ export default function Process() {
       <div className="container">
         <div className="process__inner">
           <div className="process__content">
-            <span className="section-label">Simple Process</span>
+            <span className="section-label">How It Works</span>
             <h2 className="section-heading">
               A Simple Process for Exceptional Dental Care at Caninus
             </h2>
             <p className="process__description">
-              At Caninus, we make your dental care journey effortless. Here is
-              how our straightforward process works to give you a beautiful,
-              healthy smile.
+              At Caninus, we make your dental care journey simple and seamless.
+              Here&apos;s how it works:
             </p>
 
             <div className="process__steps">
               {STEPS.map((step) => (
-                <div className="process__step" key={step.number}>
-                  <div className="process__step-number">
-                    <span>{step.number}</span>
-                  </div>
+                <div className="process__step" key={step.title}>
+                  <div className="process__step-icon">{step.icon}</div>
                   <div className="process__step-content">
                     <h3 className="process__step-title">{step.title}</h3>
                     <p className="process__step-text">{step.text}</p>

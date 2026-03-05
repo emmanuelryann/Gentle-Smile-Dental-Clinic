@@ -6,21 +6,22 @@
 
 .why-choose__inner {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
   align-items: stretch;
-  min-height: min(32rem, 60vw);
 }
 
-/* Left image panel */
+/* Left image panel — full height */
 .why-choose__image {
-  flex: 1 1 45%;
+  flex: 1 1 48%;
   position: relative;
   border-radius: 0.75rem;
   overflow: hidden;
-  min-height: min(28rem, 55vw);
+  min-height: min(32rem, 60vw);
 }
 
 .why-choose__image img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -29,7 +30,13 @@
 .why-choose__image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(26, 82, 118, 0.92) 0%, rgba(26, 82, 118, 0.6) 60%, rgba(26, 82, 118, 0.3) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(20, 50, 75, 0.95) 0%,
+    rgba(20, 50, 75, 0.8) 45%,
+    rgba(20, 50, 75, 0.4) 75%,
+    rgba(20, 50, 75, 0.2) 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -37,11 +44,11 @@
 }
 
 .why-choose__image-label {
-  font-size: clamp(0.7rem, 0.6rem + 0.2vw, 0.82rem);
+  font-family: var(--ff-body);
+  font-size: clamp(0.72rem, 0.64rem + 0.2vw, 0.85rem);
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: clamp(0.4rem, 0.3rem + 0.2vw, 0.6rem);
-  text-transform: capitalize;
+  color: #27ae60;
+  margin-bottom: clamp(0.5rem, 0.35rem + 0.3vw, 0.75rem);
 }
 
 .why-choose__image-title {
@@ -50,27 +57,27 @@
   font-weight: 700;
   color: var(--clr-white);
   line-height: 1.2;
-  margin-bottom: clamp(0.5rem, 0.35rem + 0.3vw, 0.85rem);
+  margin-bottom: clamp(0.65rem, 0.45rem + 0.35vw, 1rem);
 }
 
 .why-choose__image-text {
-  font-size: clamp(0.78rem, 0.7rem + 0.2vw, 0.92rem);
-  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(0.75rem, 0.68rem + 0.2vw, 0.9rem);
+  color: rgba(255, 255, 255, 0.75);
   line-height: 1.6;
+  max-width: min(100%, 28rem);
 }
 
-/* Right feature cards */
+/* Right feature cards — stacked, equal height */
 .why-choose__features {
-  flex: 1 1 50%;
+  flex: 1 1 48%;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
 .why-choose__card {
-  background-color: var(--clr-off-white);
   border-radius: 0.75rem;
-  padding: clamp(1.25rem, 1rem + 0.7vw, 1.75rem);
+  padding: clamp(1.5rem, 1.1rem + 0.8vw, 2rem);
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -79,42 +86,39 @@
 }
 
 .why-choose__card:hover {
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
 }
 
-.why-choose__card-icon {
-  width: clamp(2rem, 1.5rem + 1vw, 2.75rem);
-  height: clamp(2rem, 1.5rem + 1vw, 2.75rem);
-  background-color: var(--clr-primary);
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: clamp(0.5rem, 0.35rem + 0.3vw, 0.85rem);
-  flex-shrink: 0;
+/* First card — dark navy */
+.why-choose__card--dark {
+  background-color: var(--clr-primary-dark);
 }
 
-.why-choose__card-icon svg {
-  width: clamp(1rem, 0.8rem + 0.4vw, 1.35rem);
-  height: clamp(1rem, 0.8rem + 0.4vw, 1.35rem);
+.why-choose__card--dark .why-choose__card-title {
   color: var(--clr-white);
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
+}
+
+.why-choose__card--dark .why-choose__card-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Other cards — light gray */
+.why-choose__card--light {
+  background-color: var(--clr-light-gray);
 }
 
 .why-choose__card-title {
   font-family: var(--ff-heading);
-  font-size: clamp(1rem, 0.85rem + 0.4vw, 1.2rem);
-  font-weight: 600;
+  font-size: clamp(1rem, 0.88rem + 0.4vw, 1.25rem);
+  font-weight: 700;
   color: var(--clr-dark);
-  margin-bottom: clamp(0.25rem, 0.15rem + 0.2vw, 0.45rem);
+  margin-bottom: clamp(0.35rem, 0.25rem + 0.2vw, 0.6rem);
 }
 
 .why-choose__card-text {
   font-size: clamp(0.78rem, 0.7rem + 0.2vw, 0.9rem);
   color: var(--clr-text-light);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 @media (max-width: 52rem) {
@@ -123,6 +127,6 @@
   }
 
   .why-choose__image {
-    min-height: min(22rem, 50vw);
+    min-height: min(24rem, 55vw);
   }
 }

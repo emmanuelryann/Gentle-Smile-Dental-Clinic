@@ -1,20 +1,15 @@
 import '../styles/Footer.css';
 
-const QUICK_LINKS = ['Home', 'Services', 'About', 'Testimonials', 'Contact'];
-const LEGAL = ['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'Disclaimer'];
-const SERVICES = ['Dental Implants', 'Teeth Whitening', 'Orthodontics', 'Root Canal', 'Dental Crowns'];
-const RESOURCES = ['Patient Forms', 'Insurance Info', 'FAQs', 'Dental Tips', 'Before & After'];
+const QUICK_LINKS = ['Home', 'Clinics', 'Pricing', 'About', 'Locations'];
+const LEGAL = ['Privacy Policy', 'Terms of Service', 'Disclaimer'];
+const SERVICES = ['Dental Implants', 'Teeth Whitening', 'Orthodontics', 'Routine Checkups'];
+const RESOURCES = ['Information', 'Insurance', 'FAQs', 'Testimonials'];
 
 function SocialIcon({ type }) {
   const icons = {
-    facebook: (
+    x: (
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-      </svg>
-    ),
-    twitter: (
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
       </svg>
     ),
     instagram: (
@@ -24,15 +19,20 @@ function SocialIcon({ type }) {
         <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
       </svg>
     ),
-    linkedin: (
+    facebook: (
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" />
+        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
       </svg>
     ),
     youtube: (
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z" />
-        <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="#154360" />
+        <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="#2d3748" />
+      </svg>
+    ),
+    tiktok: (
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.77 1.52V6.84a4.84 4.84 0 01-1-.15z" />
       </svg>
     ),
   };
@@ -46,14 +46,10 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <div className="footer__logo">Caninus</div>
-            <p className="footer__brand-text">
-              Expert dental care with a gentle touch. Your smile is our passion
-              and our priority.
-            </p>
           </div>
 
           <div className="footer__column">
-            <h4 className="footer__column-title">Quick Links</h4>
+            <h4 className="footer__column-title">Quick Links:</h4>
             <ul className="footer__links">
               {QUICK_LINKS.map((link) => (
                 <li key={link}>
@@ -107,7 +103,7 @@ export default function Footer() {
           <div className="footer__social-column">
             <h4 className="footer__social-label">Social</h4>
             <div className="footer__socials">
-              {['facebook', 'twitter', 'instagram', 'linkedin', 'youtube'].map(
+              {['x', 'instagram', 'facebook', 'youtube', 'tiktok'].map(
                 (social) => (
                   <a
                     key={social}
@@ -125,7 +121,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            © 2025 All Rights Reserved. Caninus Dental Care • TDRA
+            © 2025 All Rights Reserved • Caninus • Dental Clinic — 75914
           </p>
         </div>
       </div>

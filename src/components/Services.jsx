@@ -3,25 +3,25 @@ import '../styles/Services.css';
 const SERVICES = [
   {
     title: 'Dental Implants',
-    text: 'Replace missing or damaged teeth with our advanced dental implant solutions, delivering a natural and lasting smile.',
+    text: 'Restore your smile and confidence with our durable, natural-looking dental implants',
     image:
       'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80',
   },
   {
     title: 'Teeth Whitening',
-    text: 'Achieve a brighter, more radiant smile with our effective and professional teeth whitening treatments.',
+    text: 'Achieve a bright, radiant smile with our professional teeth whitening treatments',
     image:
       'https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=600&q=80',
   },
   {
     title: 'Orthodontics',
-    text: 'Straighten your teeth and perfect your bite with customized orthodontic treatments for all ages.',
+    text: 'Straighten your teeth and perfect your smile with our advanced orthodontic options',
     image:
       'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80',
   },
   {
-    title: 'Restorative Dentistry',
-    text: 'Repair and restore damaged or decaying teeth with our comprehensive restorative dental services.',
+    title: 'Routine Checkups',
+    text: 'Maintain optimal oral health with regular checkups and cleanings',
     image:
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80',
   },
@@ -34,7 +34,7 @@ export default function Services() {
         <div className="services__header">
           <div className="services__header-top">
             <div className="services__header-left">
-              <span className="section-label">Our Services</span>
+              <span className="section-label">Our Service</span>
               <h2 className="section-heading">
                 Discover Our Expertise in Comprehensive Dental Care for Your
                 Perfect Smile
@@ -42,12 +42,10 @@ export default function Services() {
             </div>
             <div className="services__header-right">
               <p className="section-description">
-                At Caninus, we provide a full range of dental services, from
-                preventive care and treatments to advanced cosmetic and
-                restorative procedures. Our experienced dental professionals are
-                dedicated to delivering the highest quality care with compassion
-                and precision, ensuring a healthy and radiant smile for every
-                patient.
+                At Caninus, we proudly offer a wide range of dental services
+                tailored to meet your needs. Our experienced team combines
+                advanced technology and personalized care to ensure the best
+                possible results for your smile and oral health.
               </p>
             </div>
           </div>

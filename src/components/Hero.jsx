@@ -1,10 +1,16 @@
 import '../styles/Hero.css';
 
 const STATS = [
-  { number: '247', label: 'Happy Patients Treated' },
-  { number: '184', label: 'Dental Procedures Done' },
-  { number: '153', label: 'Successful Implants' },
-  { number: '8', label: 'Years of Excellence' },
+  { number: '247', label: 'Performed Surgeries' },
+  { number: '184', label: 'Satisfied Patients' },
+  { number: '153', label: 'Staff Members' },
+  { number: '8', label: 'Monthly Surgeries' },
+];
+
+const AVATARS = [
+  'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80',
+  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80',
+  'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80',
 ];
 
 export default function Hero() {
@@ -18,30 +24,38 @@ export default function Hero() {
         />
       </div>
 
-      <div className="container hero__content">
-        <div className="hero__badge">
-          <span className="hero__badge-dot" />
-          <span className="hero__badge-text">
-            Welcome to Caninus — Trusted Dental Care in Town
-          </span>
-        </div>
+      <div className="container hero__body">
+        <div className="hero__content">
+          <div className="hero__badge">
+            <div className="hero__avatars">
+              {AVATARS.map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="Dentist"
+                  className="hero__avatar"
+                />
+              ))}
+            </div>
+            <span className="hero__badge-text">
+              With more than 10 experienced dentists, we ensure exceptional care
+              for your smile
+            </span>
+          </div>
 
-        <h1 className="hero__title">
-          Your Bright Smile,
-          <br />
-          Our Priority
-        </h1>
+          <h1 className="hero__title">
+            Your Bright Smile,
+            <br />
+            Our Priority
+          </h1>
 
-        <p className="hero__description">
-          We provide gentle, professional dental care to help you achieve a
-          beautiful and natural smile that you can proudly share with the world.
-        </p>
+          <p className="hero__description">
+            Exceptional dental care tailored to your needs, ensuring a confident
+            and radiant smile that you can proudly share with the world
+          </p>
 
-        <div className="hero__buttons">
-          <a href="#cta" className="hero__btn hero__btn--primary">
-            Book Appointment
-          </a>
-          <a href="#services" className="hero__btn hero__btn--secondary">
+          <a href="#cta" className="hero__cta-btn">
+            Book Appointment<span className="hero__cta-separator">|</span>
             Explore Services
           </a>
         </div>
