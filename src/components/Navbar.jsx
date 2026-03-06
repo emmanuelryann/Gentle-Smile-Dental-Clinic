@@ -96,14 +96,38 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
+  // Prevent scrolling on the sidebar itself and lock background
+  useEffect(() => {
+    const handleTouchMove = (e) => {
+      if (sidebarOpen) {
+        e.preventDefault();
+      }
+    };
+
+    if (sidebarOpen) {
+      window.addEventListener('touchmove', handleTouchMove, { passive: false });
+    }
+
+    return () => {
+      window.removeEventListener('touchmove', handleTouchMove);
+    };
+  }, [sidebarOpen]);
+
   const openSidebar = useCallback(() => {
+    const scrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
     setSidebarOpen(true);
-    document.body.classList.add('no-scroll');
   }, []);
 
   const closeSidebar = useCallback(() => {
+    const scrollY = document.body.style.top;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
     setSidebarOpen(false);
-    document.body.classList.remove('no-scroll');
   }, []);
 
   const handleNavClick = useCallback(

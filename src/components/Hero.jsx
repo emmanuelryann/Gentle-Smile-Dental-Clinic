@@ -15,7 +15,7 @@ const AVATARS = [
 
 export default function Hero() {
   return (
-    <section className="hero fade-in-section" id="home">
+    <section className="hero" id="home">
       <div className="hero__bg">
         <img
           src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1920&q=80"
