@@ -2,26 +2,23 @@
 .footer {
   background-color: var(--clr-primary-dark);
   color: var(--clr-white);
-  padding: clamp(3rem, 2rem + 2.5vw, 5rem) 0 0;
+  padding: clamp(2rem, 1.5rem + 1vw, 3rem) 0 0;
 }
 
 .footer .container {
-  width: min(100%, 90rem);
+  width: min(100%, 95rem);
 }
 
 .footer__top {
-  display: flex;
-  justify-content: space-between;
-  gap: clamp(1.5rem, 1rem + 1.5vw, 3rem);
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(1rem, 2vw, 3rem);
   background-color: var(--clr-white);
   border-radius: 1.25rem;
-  padding: clamp(2.5rem, 2rem + 1.5vw, 4rem) clamp(3rem, 2vw + 2rem, 5rem);
+  padding: clamp(1.5rem, 1rem + 1vw, 2.5rem) clamp(2rem, 1.5vw + 1.5rem, 4rem);
 }
 
-.footer__brand {
-  flex: 0 1 auto;
-}
+
 
 .footer__logo {
   display: flex;
@@ -33,18 +30,27 @@
   height: clamp(3rem, 2.5rem + 1.5vw, 4.2rem);
   width: auto;
   object-fit: contain;
+  transform: scale(1.6);
+  transform-origin: left center;
+}
+
+.footer__tagline {
+  font-family: var(--ff-body);
+  font-size: clamp(0.8rem, 0.7rem + 0.2vw, 0.9rem);
+  color: var(--clr-accent);
+  font-style: italic;
+  margin-bottom: clamp(0.5rem, 0.35rem + 0.3vw, 0.75rem);
+  font-weight: 600;
 }
 
 .footer__brand-text {
   font-size: clamp(0.75rem, 0.68rem + 0.2vw, 0.87rem);
-  color: rgba(255, 255, 255, 0.65);
+  color: #000;
   line-height: 1.6;
-  max-width: min(100%, 18rem);
+  margin-bottom: clamp(1rem, 0.75rem + 0.5vw, 1.5rem);
 }
 
-.footer__column {
-  flex: 0 1 auto;
-}
+
 
 .footer__column-title {
   font-family: var(--ff-body);
@@ -61,27 +67,18 @@
 }
 
 .footer__link {
+  display: block;
+  width: 100%;
   font-size: clamp(0.73rem, 0.67rem + 0.18vw, 0.85rem);
   color: #000;
   transition: color var(--transition-base);
   padding: clamp(0.15rem, 0.1rem + 0.1vw, 0.25rem) 0;
 }
 
-.footer__link:hover {
-  color: var(--clr-accent);
-}
-
-/* Social column */
-.footer__social-column {
-  flex: 0 1 auto;
-}
-
-.footer__social-label {
-  font-family: var(--ff-body);
-  font-size: clamp(0.82rem, 0.75rem + 0.2vw, 0.95rem);
-  font-weight: 600;
-  margin-bottom: clamp(0.75rem, 0.5rem + 0.4vw, 1.15rem);
-  color: var(--clr-primary-dark);
+@media (hover: hover) {
+  .footer__link:hover {
+    color: var(--clr-accent);
+  }
 }
 
 .footer__socials {
@@ -99,9 +96,11 @@
   transition: opacity var(--transition-base);
 }
 
-.footer__social-link:hover {
-  background-color: transparent;
-  opacity: 0.7;
+@media (hover: hover) {
+  .footer__social-link:hover {
+    background-color: transparent;
+    opacity: 0.7;
+  }
 }
 
 .footer__social-link svg {
@@ -109,6 +108,61 @@
   height: clamp(1rem, 0.85rem + 0.3vw, 1.25rem);
   fill: #000;
   color: #000;
+}
+
+/* Contact List & Button */
+.footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.65rem, 0.5rem + 0.4vw, 0.85rem);
+  margin-bottom: clamp(1.25rem, 1rem + 0.5vw, 1.75rem);
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: clamp(0.73rem, 0.67rem + 0.18vw, 0.85rem);
+  color: #000;
+  line-height: 1.4;
+}
+
+.footer__contact-item svg {
+  width: clamp(1rem, 0.85rem + 0.2vw, 1.15rem);
+  height: clamp(1rem, 0.85rem + 0.2vw, 1.15rem);
+  flex-shrink: 0;
+  color: var(--clr-accent);
+}
+
+.footer__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(0.75rem, 0.7rem + 0.2vw, 0.85rem);
+  font-weight: 600;
+  color: var(--clr-white);
+  background-color: var(--clr-accent);
+  padding: clamp(0.6rem, 0.5rem + 0.3vw, 0.75rem) clamp(1.25rem, 1rem + 0.5vw, 1.75rem);
+  border-radius: 2rem;
+  transition: background-color var(--transition-base), transform var(--transition-fast);
+}
+
+@media (hover: hover) {
+  .footer__btn:hover {
+    background-color: #0fa04e;
+    color: var(--clr-white);
+    transform: translateY(-0.125rem) scale(1.05);
+  }
+}
+
+.footer__btn svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* Bottom bar */
@@ -123,23 +177,33 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+@media (max-width: 64rem) {
+  .footer__top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 52rem) {
   .footer__top {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer__brand {
-    flex: 1 1 100%;
+    grid-column: span 2;
     margin-bottom: clamp(0.5rem, 0.3rem + 0.4vw, 1rem);
+    text-align: left;
   }
 
-  .footer__column {
-    flex: 1 1 45%;
+  .footer__logo {
+    justify-content: flex-start;
   }
 }
 
 @media (max-width: 30rem) {
-  .footer__column {
-    flex: 1 1 100%;
+  .footer__top {
+    grid-template-columns: 1fr;
+  }
+  .footer__brand {
+    grid-column: span 1;
   }
 }

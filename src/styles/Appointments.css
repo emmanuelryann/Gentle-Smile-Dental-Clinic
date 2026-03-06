@@ -1,13 +1,14 @@
 /* ===== APPOINTMENTS ===== */
 .appointments {
-  padding: clamp(4rem, 3rem + 3vw, 7rem) 0;
+  padding: clamp(2rem, 4vw, 3rem) 0;
   background-color: var(--clr-primary-dark);
 }
 
 .appointments__inner {
   display: flex;
-  gap: clamp(1.5rem, 1vw + 1rem, 3rem);
+  gap: clamp(1.5rem, 3vw, 3rem);
   align-items: stretch;
+  height: min(35rem, 75vh);
 }
 
 .appointments__card {
@@ -15,49 +16,32 @@
   background-color: rgba(255, 255, 255, 0.03);
   border: 0.0625rem solid rgba(255, 255, 255, 0.05);
   border-radius: 1.25rem;
-  padding: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+  padding: clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 3vw, 2.5rem);
   color: var(--clr-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.appointments__icon-sparkle {
-  width: clamp(2.5rem, 2rem + 1vw, 3rem);
-  height: clamp(2.5rem, 2rem + 1vw, 3rem);
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: clamp(1.25rem, 1rem + 0.5vw, 1.75rem);
-}
-
-.appointments__icon-sparkle svg {
-  width: clamp(1.2rem, 1rem + 0.4vw, 1.5rem);
-  height: clamp(1.2rem, 1rem + 0.4vw, 1.5rem);
-  fill: var(--clr-accent);
-}
-
 .appointments__heading {
-  font-family: var(--ff-body);
-  font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.2rem);
+  font-family: var(--ff-heading);
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: clamp(0.75rem, 0.5rem + 0.5vw, 1rem);
+  margin-bottom: clamp(0.75rem, 2.5vw, 1rem);
 }
 
 .appointments__description {
-  font-size: clamp(0.85rem, 0.75rem + 0.2vw, 0.95rem);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
-  margin-bottom: clamp(2rem, 1.5rem + 1vw, 2.5rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
 }
 
 .appointments__features {
   display: flex;
-  gap: clamp(1rem, 0.75rem + 1vw, 2rem);
-  margin-bottom: clamp(2rem, 1.5rem + 1vw, 3rem);
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
 }
 
 .appointments__feature {
@@ -66,13 +50,13 @@
   align-items: flex-start;
   gap: 0.75rem;
   background-color: rgba(255, 255, 255, 0.02);
-  padding: clamp(1.25rem, 1rem + 0.5vw, 1.5rem);
+  padding: clamp(1.25rem, 2vw, 1.5rem);
   border-radius: 0.75rem;
 }
 
 .appointments__feature-icon {
-  width: clamp(2rem, 1.75rem + 0.5vw, 2.5rem);
-  height: clamp(2rem, 1.75rem + 0.5vw, 2.5rem);
+  width: clamp(2rem, 3.5vw, 2.5rem);
+  height: clamp(2rem, 3.5vw, 2.5rem);
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   display: flex;
@@ -82,8 +66,8 @@
 }
 
 .appointments__feature-icon svg {
-  width: clamp(1rem, 0.85rem + 0.2vw, 1.25rem);
-  height: clamp(1rem, 0.85rem + 0.2vw, 1.25rem);
+  width: clamp(1rem, 2vw, 1.25rem);
+  height: clamp(1rem, 2vw, 1.25rem);
   fill: none;
   stroke: var(--clr-accent);
   stroke-width: 2;
@@ -91,14 +75,14 @@
 
 .appointments__feature-text h4 {
   font-family: var(--ff-body);
-  font-size: clamp(0.85rem, 0.75rem + 0.2vw, 0.95rem);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
   font-weight: 600;
   margin-bottom: 0.35rem;
   color: var(--clr-white);
 }
 
 .appointments__feature-text p {
-  font-size: clamp(0.72rem, 0.65rem + 0.15vw, 0.8rem);
+  font-size: clamp(0.72rem, 1.5vw, 0.8rem);
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.5;
 }
@@ -107,7 +91,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: clamp(2rem, 1.5rem + 1vw, 3rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
 }
 
 .appointments__btn {
@@ -115,16 +99,16 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: clamp(0.85rem, 0.75rem + 0.2vw, 0.95rem);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
   font-weight: 600;
-  padding: clamp(0.7rem, 0.5rem + 0.4vw, 0.9rem) clamp(1.25rem, 1rem + 1vw, 2rem);
+  padding: clamp(0.7rem, 1.5vw, 0.9rem) clamp(1.25rem, 3vw, 2rem);
   border-radius: 2rem;
   transition: transform var(--transition-fast), background-color var(--transition-base), border-color var(--transition-base);
 }
 
 .appointments__btn svg {
-  width: clamp(1.1rem, 0.9rem + 0.3vw, 1.3rem);
-  height: clamp(1.1rem, 0.9rem + 0.3vw, 1.3rem);
+  width: clamp(1.1rem, 2vw, 1.3rem);
+  height: clamp(1.1rem, 2vw, 1.3rem);
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -136,10 +120,11 @@
   border: 0.0625rem solid var(--clr-accent);
 }
 
-.appointments__btn--primary:hover {
-  background-color: #087d3a;
-  border-color: #087d3a;
-  transform: translateY(-0.0625rem);
+@media (hover: hover) {
+  .appointments__btn--primary:hover {
+    background-color: #0fa04e;
+    transform: translateY(-0.125rem) scale(1.05);
+  }
 }
 
 .appointments__btn--outline {
@@ -148,16 +133,18 @@
   border: 0.0625rem solid rgba(255, 255, 255, 0.3);
 }
 
-.appointments__btn--outline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-0.0625rem);
+@media (hover: hover) {
+  .appointments__btn--outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-0.125rem) scale(1.05);
+  }
 }
 
 .appointments__emergency {
   background-color: rgba(255, 255, 255, 0.03);
-  padding: clamp(1rem, 0.75rem + 0.5vw, 1.25rem);
+  padding: clamp(1rem, 2vw, 1.25rem);
   border-radius: 0.75rem;
-  font-size: clamp(0.78rem, 0.7rem + 0.15vw, 0.85rem);
+  font-size: clamp(0.78rem, 1.5vw, 0.85rem);
   color: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-wrap: wrap;
@@ -171,8 +158,10 @@
   transition: color var(--transition-base);
 }
 
-.appointments__hotline:hover {
-  color: #087d3a;
+@media (hover: hover) {
+  .appointments__hotline:hover {
+    color: #0fa04e;
+  }
 }
 
 .appointments__image {
@@ -188,13 +177,16 @@
   transition: transform var(--transition-slow);
 }
 
-.appointments__image:hover img {
-  transform: scale(1.05);
+@media (hover: hover) {
+  .appointments__image:hover img {
+    transform: scale(1.05);
+  }
 }
 
 @media (max-width: 52rem) {
   .appointments__inner {
     flex-direction: column;
+    height: auto;
   }
   
   .appointments__features {

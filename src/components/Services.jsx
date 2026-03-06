@@ -2,28 +2,28 @@ import '../styles/Services.css';
 
 const SERVICES = [
   {
-    title: 'Dental Implants',
-    text: 'Restore your smile and confidence with our durable, natural-looking dental implants',
+    title: 'Professional Cleaning',
+    text: 'Experience a fresher, healthier smile with our thorough professional cleaning services',
     image:
-      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80',
+      'https://images.pexels.com/photos/6812544/pexels-photo-6812544.jpeg',
   },
   {
     title: 'Teeth Whitening',
     text: 'Achieve a bright, radiant smile with our professional teeth whitening treatments',
     image:
-      'https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=600&q=80',
+      'https://images.pexels.com/photos/7789705/pexels-photo-7789705.jpeg',
   },
   {
-    title: 'Orthodontics',
-    text: 'Straighten your teeth and perfect your smile with our advanced orthodontic options',
+    title: 'Braces',
+    text: 'Straighten your teeth and perfect your smile with our advanced customized braces',
     image:
-      'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80',
+      'https://images.pexels.com/photos/6311668/pexels-photo-6311668.jpeg',
   },
   {
-    title: 'Routine Checkups',
-    text: 'Maintain optimal oral health with regular checkups and cleanings',
+    title: 'Porcelain',
+    text: 'Enhance your smile with our premium and natural-looking porcelain treatments',
     image:
-      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80',
+      'https://images.pexels.com/photos/6812502/pexels-photo-6812502.jpeg',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Services() {
         <div className="services__header">
           <div className="services__header-top">
             <div className="services__header-left">
-              <span className="section-label">Our Service</span>
+              <span className="section-label">Our Services</span>
               <h2 className="section-heading">
                 Discover Our Expertise in Comprehensive Dental Care for Your
                 Perfect Smile
@@ -42,7 +42,7 @@ export default function Services() {
             </div>
             <div className="services__header-right">
               <p className="section-description">
-                At Caninus, we proudly offer a wide range of dental services
+                At Gental Smile, we proudly offer a wide range of dental services
                 tailored to meet your needs. Our experienced team combines
                 advanced technology and personalized care to ensure the best
                 possible results for your smile and oral health.

@@ -31,13 +31,13 @@ export default function WhyChooseUs() {
               loading="lazy"
             />
             <div className="why-choose__image-overlay">
-              <span className="why-choose__image-label">Why Caninus?</span>
+              <span className="why-choose__image-label">Why Gentle Smile?</span>
               <h2 className="why-choose__image-title">
-                What Makes Caninus Your Trusted Partner in Dental Care
+                What Makes Gentle Smile Your Trusted Partner in Dental Care
                 Excellence
               </h2>
               <p className="why-choose__image-text">
-                At Caninus, we&apos;re committed to high-quality dental care
+                At Gentle Smile, we&apos;re committed to high-quality dental care
                 that prioritizes your comfort and confidence. Here&apos;s why so
                 many trust us.
               </p>

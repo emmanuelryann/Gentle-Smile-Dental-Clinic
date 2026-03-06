@@ -48,10 +48,6 @@
   transition: transform var(--transition-base);
 }
 
-.testimonials__card:hover {
-  transform: translateY(-0.1875rem);
-}
-
 .testimonials__stars {
   display: flex;
   justify-content: center;
@@ -91,8 +87,12 @@
 }
 
 @media (max-width: 52rem) {
+  .testimonials__grid {
+    gap: 3rem;
+  }
+
   .testimonials__card {
-    flex: 1 1 45%;
+    flex: 1 1 100%;
   }
 }
 

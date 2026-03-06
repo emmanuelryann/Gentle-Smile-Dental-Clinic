@@ -17,7 +17,7 @@ export default function CTA() {
         <p className="cta-section__text">
           It&apos;s time to prioritize your smile and oral health. Take the
           first step toward a brighter, more<br />
-          confident you by booking your appointment with Caninus today.
+          confident you by booking your appointment with Gentle Smile today.
         </p>
         <a href="#cta" className="cta-section__btn">
           Book Your Appointment Today

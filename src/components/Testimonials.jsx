@@ -2,24 +2,24 @@ import '../styles/Testimonials.css';
 
 const TESTIMONIALS = [
   {
-    text: '"Caninus made my dental journey stress-free and enjoyable. From the friendly staff to the advanced treatments, everything was perfect!"',
-    name: 'Siti Aisyah',
+    text: '"Gentle Smile made my dental journey stress-free and enjoyable. From the friendly staff to the advanced treatments, everything was perfect!"',
+    name: 'Mara Quentin',
     avatar:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80',
+      'https://images.pexels.com/photos/3621659/pexels-photo-3621659.jpeg',
     stars: 5,
   },
   {
-    text: '"I\'m so grateful for the amazing care I received at Caninus. The team is incredibly professional and kind. My smile has never looked better!"',
-    name: 'Ahmad Firdaus',
+    text: '"I\'m so grateful for the amazing care I received at Gentle Smile. The team is incredibly professional and kind. My smile has never looked better!"',
+    name: 'Jefferson lemar',
     avatar:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80',
+      'https://img.freepik.com/free-photo/close-up-upset-american-black-person_23-2148749582.jpg?semt=ais_rp_progressive&w=740&q=80',
     stars: 5,
   },
   {
-    text: '"I was nervous about my dental procedure, but the team at Caninus made me feel completely at ease with their support. The results are incredible!"',
-    name: 'Faisal Rahman',
+    text: '"I was nervous about my dental procedure, but the team at Gentle Smile made me feel completely at ease with their support. The results are incredible!"',
+    name: 'Jessica Aquah',
     avatar:
-      'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80',
+      'https://images.pexels.com/photos/15766838/pexels-photo-15766838.jpeg?cs=srgb&dl=pexels-brandon-ricketts-450464466-15766838.jpg&fm=jpg',
     stars: 5,
   },
 ];

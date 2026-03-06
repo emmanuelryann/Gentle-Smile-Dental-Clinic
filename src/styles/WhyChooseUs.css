@@ -85,8 +85,10 @@
   transition: box-shadow var(--transition-base);
 }
 
-.why-choose__card:hover {
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+@media (hover: hover) {
+  .why-choose__card:hover {
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+  }
 }
 
 /* First card — dark navy */

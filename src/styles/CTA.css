@@ -1,7 +1,7 @@
 /* ===== CTA ===== */
 .cta-section {
   position: relative;
-  padding: clamp(5rem, 4rem + 4vw, 9rem) 0;
+  padding: clamp(4rem, 2rem + 2vw, 9rem) 0;
   text-align: center;
   overflow: hidden;
 }
@@ -61,7 +61,18 @@
   cursor: pointer;
 }
 
-.cta-section__btn:hover {
-  background-color: #087d3a;
-  transform: translateY(-0.0625rem);
+@media (hover: hover) {
+  .cta-section__btn:hover {
+    background-color: #0fa04e;
+    transform: translateY(-0.125rem) scale(1.05);
+  }
+}
+@media (max-width: 52rem) {
+  .cta-section__heading {
+    margin-bottom: 2rem;
+  }
+  
+  .cta-section__text {
+    margin-bottom: 3rem;
+  }
 }

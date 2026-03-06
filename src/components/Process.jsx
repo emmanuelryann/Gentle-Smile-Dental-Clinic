@@ -44,10 +44,10 @@ export default function Process() {
           <div className="process__content">
             <span className="section-label">How it Works</span>
             <h2 className="section-heading">
-              A Simple Process for Exceptional Dental Care at Caninus
+              A Simple Process for Exceptional Dental Care at Gentle Smile
             </h2>
             <p className="process__description">
-              At Caninus, we make your dental care journey simple and seamless.
+              At Gentle Smile, we make your dental care journey simple and seamless.
               Here&apos;s how it works:
             </p>
 
@@ -66,7 +66,7 @@ export default function Process() {
 
           <div className="process__image">
             <img
-              src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80"
+              src="https://images.pexels.com/photos/3845760/pexels-photo-3845760.jpeg"
               alt="Dental team at work"
               loading="lazy"
             />

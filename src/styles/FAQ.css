@@ -53,8 +53,10 @@
   transition: color var(--transition-base);
 }
 
-.faq__question:hover .faq__question-text {
-  color: var(--clr-white);
+@media (hover: hover) {
+  .faq__question:hover .faq__question-text {
+    color: var(--clr-white);
+  }
 }
 
 .faq__question-text {
@@ -138,7 +140,9 @@
   transition: background-color var(--transition-base), transform var(--transition-fast);
 }
 
-.faq__btn:hover {
-  background-color: #087d3a;
-  transform: translateY(-0.0625rem);
+@media (hover: hover) {
+  .faq__btn:hover {
+    background-color: #0fa04e;
+    transform: translateY(-0.125rem) scale(1.05);
+  }
 }

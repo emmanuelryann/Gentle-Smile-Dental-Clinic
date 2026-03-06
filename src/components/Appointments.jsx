@@ -6,13 +6,7 @@ export default function Appointments() {
       <div className="container appointments__inner">
         <div className="appointments__card">
           <div className="appointments__card-content">
-            <div className="appointments__icon-sparkle">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L14.645 9.355L22 12L14.645 14.645L12 22L9.355 14.645L2 12L9.355 9.355L12 2Z" fill="currentColor"/>
-              </svg>
-            </div>
-            
-            <h2 className="appointments__heading">Book Your<br/>Dental Appointment</h2>
+            <h2 className="appointments__heading">Book Your Dental Appointment</h2>
             <p className="appointments__description">
               Schedule a visit with our expert dental team and experience exceptional care
             </p>
@@ -70,14 +64,14 @@ export default function Appointments() {
 
             <div className="appointments__emergency">
               <span>Dental Emergency? Call our 24/7 hotline at</span>
-              <a href="tel:233303956341" className="appointments__hotline">(233) 30 395 6341</a>
+              <a href="tel:233 50 376 8111" className="appointments__hotline">(233) 50 376 8111</a>
             </div>
           </div>
         </div>
         
         <div className="appointments__image">
           <img 
-            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" 
+            src="https://images.pexels.com/photos/3845759/pexels-photo-3845759.jpeg" 
             alt="Child receiving dental care" 
             loading="lazy" 
           />

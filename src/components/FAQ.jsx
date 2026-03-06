@@ -12,15 +12,15 @@ const FAQS = [
   },
   {
     question: 'What should I look for when choosing the right dentist?',
-    answer: 'Look for a dentist with good reviews, relevant experience, a clean facility, and a friendly staff. Also ensure they offer the specific services you and your family need.',
+    answer: 'Choosing a dentist who "clicks" with you and your family is important, and you may wish to consider several dentists before making your final decision. During your first visit, you should be able to determine whether the dentist is right for you.',
   },
   {
     question: 'How can I take care of my teeth between dental checkups?',
-    answer: 'Brush at least twice a day with fluoride toothpaste, floss daily, limit sugary foods and drinks, and avoid smoking. Using an antibacterial mouthwash can also help.',
+    answer: 'Always remember to brush your teeth at least two times a day, and floss at least once. Use toothpaste that contains fluoride. Avoid foods with a lot of sugar and tobacco. Be sure to schedule your routine checkup every six months.',
   },
   {
     question: 'At what age should I start taking my child to see the dentist?',
-    answer: 'It is recommended to take your child to the dentist by their first birthday or within six months after their first tooth appears.',
+    answer: 'The American Academy of Pediatric Dentistry recommends that children first see a dentist as early as six months of age and no later than one year of age. After the first visit, be sure to schedule regular checkups every six months.',
   },
 ];
 
