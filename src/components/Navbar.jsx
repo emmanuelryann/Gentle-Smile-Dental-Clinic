@@ -123,10 +123,21 @@ export default function Navbar() {
 
   const closeSidebar = useCallback(() => {
     const scrollY = document.body.style.top;
+    
+    // Disable smooth scroll temporarily for instant restoration
+    document.documentElement.style.scrollBehavior = 'auto';
+    
     document.body.style.position = '';
     document.body.style.top = '';
     document.body.style.width = '';
+    
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    
+    // Re-enable smooth scroll after restoration
+    setTimeout(() => {
+      document.documentElement.style.scrollBehavior = '';
+    }, 0);
+    
     setSidebarOpen(false);
   }, []);
 
@@ -191,13 +202,6 @@ export default function Navbar() {
       {/* Side Drawer */}
       <aside className={`sidebar${sidebarOpen ? ' open' : ''}`}>
         <div className="sidebar__header">
-          <a
-            href="#home"
-            className="sidebar__logo"
-            onClick={(e) => handleNavClick(e, '#home')}
-          >
-            <img src={gentleSmileLogo} alt="Gentle Smile Dental" className="sidebar__logo-img" />
-          </a>
           <button className="sidebar__close" onClick={closeSidebar} aria-label="Close menu">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="18" y1="6" x2="6" y2="18" />

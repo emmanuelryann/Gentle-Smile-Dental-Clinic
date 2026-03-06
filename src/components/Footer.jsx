@@ -173,7 +173,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            © 2025 All Rights Reserved • Gentle Smile • Dental Clinic — 75914
+            © 2025 All Rights Reserved • Gentle Smile Dental Clinic
           </p>
         </div>
       </div>

@@ -85,13 +85,6 @@
   transition: box-shadow var(--transition-base);
 }
 
-@media (hover: hover) {
-  .why-choose__card:hover {
-    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
-  }
-}
-
-/* First card — dark navy */
 .why-choose__card--dark {
   background-color: var(--clr-primary-dark);
 }
@@ -104,7 +97,6 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Other cards — light gray */
 .why-choose__card--light {
   background-color: var(--clr-light-gray);
 }
